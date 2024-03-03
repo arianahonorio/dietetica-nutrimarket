@@ -105,7 +105,6 @@ header nav a:hover{
 .menu-button:focus{
     box-shadow: none;
 }
-
 @media screen and (max-width: 991px){
     .menu{
         background-color: #f9f5e8;
@@ -114,7 +113,6 @@ header nav a:hover{
 }
 
 /*main-index*/
-
 main{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -132,6 +130,12 @@ h1{
     width: 100%;
     background-color: #efdc97;
 }
+@media screen and (max-width: 500px) {
+    .productos-destacados div img{
+        width: 100px;
+    }
+}
+    
 .productos-destacados{
     background-color: #d3a644;
 }
@@ -145,11 +149,14 @@ h1{
     justify-content: center;
     justify-content: space-evenly;
 }
-.productos-destacados div img{
-    width: 200px;
-    flex-wrap: wrap;
-    place-self: center center;
-    margin-bottom: 10px;
+@media screen and (max-width: 961px){
+    .productos-destacados div img{
+        width: 150px;
+        display: flex;
+        flex-wrap: wrap;
+        place-self: center center;
+        margin-bottom: 10px;
+    }
 }
 
 /*main-productos*/
@@ -165,26 +172,71 @@ main section{
     flex-wrap: wrap;
     padding-bottom: 15px;
 }
+/*
 .productos-uno{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-bottom: 5px;
-}
-.productos-uno div img{
-    width: 250px;
+    row-cols-4
 }
 .productos-dos{
     display: flex;
     width: 100%;
     justify-content: center;
+} */
+.container-productos div img{
+    width: 200px;
 }
-.productos-dos div img{
-    width: 250px;
+.container-productos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 
+    'frutossecos especias sintacc diabeticos'
+    'legumbres semillas granola otros';
+}
+.frutos-secos{
+    grid-area: frutossecos;
+    padding: 10px;
+}
+.especias{
+    grid-area: especias;
+    padding: 10px;
+}
+.sin-tacc{
+    grid-area: sintacc;
+    padding: 10px;
+}
+.apto-diabeticos{
+    grid-area: diabeticos;
+    padding: 10px;
+}
+.legumbres{
+    grid-area: legumbres;
+    padding: 10px;
+}
+.semillas{
+    grid-area: semillas;
+    padding: 10px;
+}
+.granola{
+    grid-area: granola;
+    padding: 10px;
+}
+.otros{
+    grid-area: otros;
+    padding: 10px; 
+}
+@media screen and (max-width: 500px){
+    .container-productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
 }
 
 /*main-recetas*/
-
 .container-barritas{
     padding-left: 20px;
     display: grid;
@@ -241,6 +293,20 @@ main section{
     width: 70%;
     padding-top: 10px;
     padding-bottom: 20px;
+}
+@media screen and (max-width:500px) {
+    .container-barritas{
+        display: flex;
+    }
+    .video-barritas iframe{
+        width: auto ;
+    }
+    .container-pudines{
+        display: flex;
+    }
+    .video-pudines iframe{
+        width: autogit;
+    }
 }
 
 /*main-nutrimarket-te-escucha sin bootstrap
