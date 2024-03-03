@@ -52,6 +52,8 @@ header nav a:hover{
 /*header con bootstrap*/
 .container-nav {
     background-color: #f9f5e8;
+    position: sticky;
+    top: 0px;
 }
 .navbar .navbar-expand-lg {
     background-color: #f9f5e8;
@@ -103,13 +105,9 @@ header nav a:hover{
 .menu-button:focus{
     box-shadow: none;
 }
-.padding-0{
-    padding: 0;
-}
+
 @media screen and (max-width: 991px){
     .menu{
-        position: absolute;
-        top: 152px;
         background-color: #f9f5e8;
         width: 100vw;
     }
@@ -321,10 +319,9 @@ main section{
     border-radius: 20px 20px;
 }
 .button1:hover{
-    border: 2px solid fuchsia;
-    color: fuchsia;
+    border: 2px solid #efdc97;
+    color: #efdc97;
 }
-
 
 /*main-contacto sin bootstrap
 .contenedor-contacto{
@@ -385,6 +382,7 @@ main section{
     grid-area: containertexto;
     justify-items: center;
     padding-top: 50px;
+    padding-left: 25px;
     padding-bottom: 50px;
 }
 .atencion-telefonica h3{
@@ -405,7 +403,9 @@ main section{
 .mail-nutri-escucha{
     padding-bottom: 15px;
 }
-
+.consulta{
+    padding-top: 5px;
+}
 /*footer*/
 
 footer{
@@ -413,15 +413,16 @@ footer{
     font-optical-sizing: auto;
     font-style: normal;
     background-color: #6a964c;
-    height: 190px;
     display: flex;
     justify-content: center;
 }
-footer section{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 10px;
+@media screen and (max-width: 961px) {
+    footer section{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 10px;
+    }
 }
 .container-mapa-del-sitio h3{
     text-align: center;
@@ -441,4 +442,24 @@ footer section{
 }
 .div-mapa ul li a:hover{
     text-decoration: underline;
+}
+.button2{
+    background-color: #efdc97;
+    color: #294d2b;
+    padding: 2px 2px 2px 2px;
+    font-size: 20px;
+    border-radius: 20px 20px;
+    border: 2px solid #6a964c ;
+}
+.button2:hover{
+    color: #6a964c;
+}
+@media screen and (max-width:500px){
+    .container-mapa-del-sitio{
+        display:none;
+    }
+    .container-newsletter{
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
 }
