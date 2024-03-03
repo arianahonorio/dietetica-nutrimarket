@@ -72,31 +72,27 @@
                 En Dietética Nutrimarket trabajamos día a día para ofrecer más y mejores productos de primera calidad
                 a los mejores precios. Pero ese no es nuestro único objetivo: queremos que también tengas ideas para 
                 que sean más sencillas tus comidas del día a día.
-                <br>Sabemos que la única forma de lograrlo es conocer tus necesidades,opiniones y sugerencias. 
+                <br>Sabemos que la única forma de lograrlo es conocer tus necesidades, opiniones y sugerencias. 
                 Dejanos tus comentarios. Nosotros nos comprometemos a escucharte y trabajar para ser cada día mejores.
             </p>
         </section>
+        <!-- form sin bootstrap
         <section class="container-formulario">
             <p class="form-texto">
                 Completá el formulario o escribinos a nutriteescucha@nutrimarket.com.ar
             </p>
-            <!--formulario-->
             <form>
                 <div class="form-nombre">
-                    <!--nombre-->
                     <label for="name"></label>
                     <input type="name" placeholder="Nombre y Apellido" id="name">
                 </div>
                 <div class="form-telefono-celular">
-                    <!--telefono celular-->
                     <label for="tel"></label>
                     <input type="tel" placeholder="Teléfono celular" id="tel">
-                <div class="form-edad">
-                    <!--edad-->
+                <div class="form-edad">>
                     <label for="number"></label>
                     <input type="number" placeholder="Edad" id="number">
                 </div>
-                    <!--genero-->
                 <div class="form-genero">
                     <select name="select">
                     <option value="genero">Género</option>
@@ -105,23 +101,64 @@
                 </select>
                 </div>
                 <div class="form-mail">
-                    <!--mail-->
                     <label for="email"></label>
                     <input type="email" placeholder="Dirección de email" id="email">
                 </div>
                 <div class="form-pedidos">
-                    <!--pedidos-->
                     <label for="text"></label>
                     <input type="text" placeholder="Dejanos tu pedido" id="text">
                 </div>
                 <div class="form-mensaje">
-                    <!--mensaje-->
                     <textarea name="text" placeholder="Escribinos tu consulta"></textarea>
                 </div>
                 <div class="button-enviar">
                     <input type="submit" value="Enviar">
                 </div>
             </form>
+        </section> -->
+        <!-- con bootstrap-->
+        <section class="container-form-escucha">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">¿Cómo te llamas?</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Tu número de teléfono</label>
+                <label for="validationCustom02" class="form-label"></label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Tu email</label>
+                    <div class="input-group has-validation">
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">¿De dónde sos?</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Género</label>
+                <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Elige...</option>
+                <option>Femenino</option>
+                <option>Masculino</option>
+                </select>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" 
+                style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Escribinos tu pedido</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Escribinos tu consulta</label>
+            </div>
+            <div class="col-12">
+                <button class="button1" type="submit">Enviar</button>
+            </div>
+        </form>
         </section>
     </main>
     <footer>

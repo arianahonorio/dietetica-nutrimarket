@@ -245,7 +245,7 @@ main section{
     padding-bottom: 20px;
 }
 
-/*main-nutrimarket-te-escucha*/
+/*main-nutrimarket-te-escucha sin bootstrap
 .texto{
     width: 80%;
     text-align:left;
@@ -298,10 +298,35 @@ main section{
 }
 .button-enviar{
     grid-area: buttonenviar;
+} */
+
+/*main-nutrimarket-te-escucha con bootstrap*/
+
+.texto{
+    width: 80%;
+    text-align:left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.container-form-escucha{
+    width: 90%;
+    padding-left:30px ;
+}
+.button1{
+    background-color: #6a964c;
+    color: white;
+    padding: 2px 2px 2px 2px;
+    font-size: 20px;
+    border: 2px solid #6a964c ;
+    border-radius: 20px 20px;
+}
+.button1:hover{
+    border: 2px solid fuchsia;
+    color: fuchsia;
 }
 
-/*main-contacto*/
 
+/*main-contacto sin bootstrap
 .contenedor-contacto{
     display: grid;
     justify-content: center;
@@ -320,6 +345,45 @@ main section{
 }
 .container-text-contacto{
     grid-area: containertexto ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.atencion-telefonica h3{
+    text-decoration: underline;
+}
+.atencion-telefonica{
+    padding-bottom: 15px;
+}
+.mail-contacto h3{
+    text-decoration: underline;
+}
+.mail-contacto{
+    padding-bottom: 15px;
+}
+.mail-nutri-escucha h3{
+    text-decoration: underline;
+}
+.mail-nutri-escucha{
+    padding-bottom: 15px;
+} */
+
+/*main-contacto son bootstrap*/
+.contenedor-contacto{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        'titulo titulo'
+        'containerform containertexto';
+}
+.titulo-contacto{
+    grid-area: titulo;
+}
+.container-form{
+    grid-area: containerform;
+}
+.container-text-contacto{
+    grid-area: containertexto;
+    justify-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -375,6 +439,6 @@ footer section{
     color: black;
     text-decoration: none;
 }
-.div-mapa ul li a .hover{
+.div-mapa ul li a:hover{
     text-decoration: underline;
 }
