@@ -190,7 +190,6 @@ main section{
     width: 200px;
 }
 .container-productos{
-    display: flex;
     width: 100%;
     justify-content: center;
     justify-content: space-around;
@@ -234,10 +233,6 @@ main section{
 @media screen and (max-width: 480px){
     .container-productos{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
     }
 }
 
