@@ -231,15 +231,16 @@ main section{
     grid-area: otros;
     padding: 10px; 
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 480px){
     .container-productos{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 }
+
 
 /*main-recetas*/
 .container-barritas{
@@ -477,6 +478,14 @@ main section{
 .consulta{
     padding-top: 5px;
 }
+@media screen and (max-width: 480px){
+    .container-text-contacto{
+        font-size:small;
+    }
+    .section-contacto{
+        display: flex;
+    }
+}
 /*footer*/
 
 footer{
@@ -488,7 +497,7 @@ footer{
     justify-content: center;
 }
 footer section{
-    width: 80%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
@@ -523,12 +532,15 @@ footer section{
 .button2:hover{
     color: #6a964c;
 }
+.email-footer{
+    width: 150px;
+}
 @media screen and (max-width:500px){
     .container-mapa-del-sitio{
         display:none;
     }
     .container-newsletter{
-        padding-left: 15px;
+        padding-left: 10px;
         padding-bottom: 10px;
     }
 }
