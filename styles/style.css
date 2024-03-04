@@ -53,7 +53,8 @@ header nav a:hover{
 .container-nav {
     background-color: #f9f5e8;
     position: sticky;
-    top: 0px;
+    top: 0;
+    z-index: 1;
 }
 .navbar .navbar-expand-lg {
     background-color: #f9f5e8;
@@ -135,9 +136,14 @@ h1{
         width: 100px;
     }
 }
-    
 .productos-destacados{
     background-color: #d3a644;
+}
+.productos-destacados div img{
+    width: 150px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 .productos-destacados h2{
     text-align: center;
@@ -149,15 +155,14 @@ h1{
     justify-content: center;
     justify-content: space-evenly;
 }
-@media screen and (max-width: 961px){
-    .productos-destacados div img{
-        width: 150px;
-        display: flex;
-        flex-wrap: wrap;
-        place-self: center center;
-        margin-bottom: 10px;
-    }
+.productos-destacados div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    
 }
+
 
 /*main-productos*/
 
@@ -305,7 +310,7 @@ main section{
         display: flex;
     }
     .video-pudines iframe{
-        width: autogit;
+        width: auto;
     }
 }
 
@@ -482,13 +487,11 @@ footer{
     display: flex;
     justify-content: center;
 }
-@media screen and (max-width: 961px) {
-    footer section{
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-top: 10px;
-    }
+footer section{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
 }
 .container-mapa-del-sitio h3{
     text-align: center;
