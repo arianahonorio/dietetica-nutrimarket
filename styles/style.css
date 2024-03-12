@@ -2,52 +2,21 @@
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-*/
+*/ 
 
-/*reset*/  
+/*reset
 *{
     margin: 0;
     padding:0;
-    box-sizing: border-box
-}
+    box-sizing: border-box;
+} */
 
-/*header sin bootstrap
-header{
-    display: flex;
+/*main{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: bold;
-    background-color: #f9f5e8;
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 60px;
-}
-header img{
-    width: 50px;
-    height: 50px; 
-}
-header nav a{
-    text-decoration: none;
-    color:#6a964c;
-}
-header nav a:hover{ 
-    color: black;
-}
-.container-menu{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    justify-content: flex-end;
-    align-content: center;
-}
-.container-menu{
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
-}
-*/
+    background-color: #efdc97;
+}*/
 
 /*header con bootstrap*/
 .container-nav {
@@ -114,12 +83,7 @@ header nav a:hover{
 }
 
 /*main-index*/
-main{
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: #efdc97;
-}
+
 h1{
     width: 100%;
     height: 40px;
@@ -177,15 +141,7 @@ main section{
     flex-wrap: wrap;
     padding-bottom: 15px;
 }
-/*
-.productos-uno{
-    row-cols-4
-}
-.productos-dos{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-} */
+
 .container-productos div img{
     width: 200px;
 }
@@ -317,61 +273,6 @@ main section{
     }
 }
 
-/*main-nutrimarket-te-escucha sin bootstrap
-.texto{
-    width: 80%;
-    text-align:left;
-    margin-left: 30px;
-}
-.container-formulario{
-    padding-top: 20px;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    grid-template-areas:
-    'formtexto formtexto formtexto'
-    'nombre nombre nombre'
-    'telefonocelular telefonocelular edad'
-    'genero mail mail'
-    'pedidos pedidos pedidos'
-    'mensaje mensaje buttonenviar';
-}
-.form-texto{
-    grid-area: formtexto;
-    padding-bottom: 15px;
-}
-.form-nombre{
-    grid-area: nombre;
-    padding-bottom: 10px;
-}
-.form-telefono-celular{
-    grid-area: telefonocelular;
-    padding-bottom: 10px;
-}
-.form-edad{
-    grid-area: edad;
-    padding-bottom: 10px;
-}
-.form-genero{
-    grid-area: genero;
-    padding-bottom: 10px;
-}
-.form-mail{
-    grid-area: mail;
-    padding-bottom: 10px;
-}
-.form-pedidos{
-    grid-area: pedidos;
-    padding-bottom: 10px;
-}
-.form-mensaje{
-    grid-area: mensaje;
-    padding-bottom: 10px;
-}
-.button-enviar{
-    grid-area: buttonenviar;
-} */
-
 /*main-nutrimarket-te-escucha con bootstrap*/
 
 .texto{
@@ -397,46 +298,7 @@ main section{
     color: #efdc97;
 }
 
-/*main-contacto sin bootstrap
-.contenedor-contacto{
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 
-    'titulocontacto titulocontacto'
-    'containerform containertexto';
-}
-.titulo-contacto{
-    grid-area: titulocontacto;
-}
-.container-form-contacto{
-    grid-area: containerform;
-    padding-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.container-text-contacto{
-    grid-area: containertexto ;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.atencion-telefonica h3{
-    text-decoration: underline;
-}
-.atencion-telefonica{
-    padding-bottom: 15px;
-}
-.mail-contacto h3{
-    text-decoration: underline;
-}
-.mail-contacto{
-    padding-bottom: 15px;
-}
-.mail-nutri-escucha h3{
-    text-decoration: underline;
-}
-.mail-nutri-escucha{
-    padding-bottom: 15px;
-} */
+
 
 /*main-contacto son bootstrap*/
 .contenedor-contacto{
