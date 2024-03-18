@@ -1,0 +1,82 @@
+/*Media Queries*/
+/*Header*/
+@media screen and (max-width: 991px){
+    .container-nav{
+        .container-fluid{
+            .menu{
+                background-color: #f9f5e8;
+                width: 100vw;
+            }
+        }
+    }
+    
+}
+/*main-index*/
+@media screen and (max-width: 500px) {
+    .main-index{
+        .productos-destacados div img{
+            width: 100px;
+        }
+    }
+    
+}
+/*main-productos*/
+@media screen and (max-width: 430px){
+    .main-productos{
+        .container-productos{
+            display: flex;
+            div img{
+                width: 150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .main-productos{
+        container-productos{
+            display: flex;
+        }
+    }
+}
+/*main-recetas*/
+@media screen and (max-width:500px) {
+    .main-recetas{
+        .container-barritas{
+            display: flex;
+            .video-barritas iframe{
+                width: auto ;
+            }
+        }
+        .container-pudines{
+            display: flex;
+            .video-pudines iframe{
+                width: auto;
+            }
+        }
+    }
+}
+/*main-contacto*/
+@media screen and (max-width: 480px){
+    .container-contacto{
+        .section-contacto{
+            display: flex;
+            .container-text-contacto{
+                font-size:small;
+            }
+        }
+    }
+}
+/*footer*/
+@media screen and (max-width:500px){
+    footer{
+        section{
+            .container-mapa-del-sitio{
+                display:none;
+            }
+            .container-newsletter{
+                padding-left: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

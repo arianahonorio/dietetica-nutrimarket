@@ -1,0 +1,42 @@
+/*main-contacto*/
+.contenedor-contacto{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        'titulo titulo'
+        'containerform containertexto';
+        .titulo-contacto{
+            grid-area: titulo;
+        }
+        .container-form{
+            grid-area: containerform;
+        }
+        .container-text-contacto{
+            grid-area: containertexto;
+            justify-items: center;
+            padding-top: 50px;
+            padding-left: 25px;
+            padding-bottom: 50px;
+            .atencion-telefonica{
+                padding-bottom: 15px;
+                h3{
+                    text-decoration: underline;
+                }
+            }
+            .mail-contacto{
+                padding-bottom: 15px;
+                h3{
+                    text-decoration: underline;
+                }
+            }
+            .mail-nutri-escucha{
+                padding-bottom: 15px;
+                h3{
+                    text-decoration: underline;
+                }
+            }
+            .consulta{
+                padding-top: 5px;
+            }
+        }
+}

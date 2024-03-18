@@ -9,7 +9,7 @@
     }
     .navbar{
         background-color: #f9f5e8;
-        width: 100%;
+        width: $medida-principal;
     }
     .logo{
         width: 50px;
@@ -27,13 +27,13 @@
     .menu{
         column-gap: 10px;
         align-items: center;
-        width: 100%;
+        width: $medida-principal;
         flex-grow: 0;
         display: flex;
         justify-content: flex-end;
         align-content: center;
         .navbar-nav{
-            width: 100%;
+            width: $medida-principal;
             display: flex;
             justify-content: flex-end;
             align-content: center;

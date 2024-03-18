@@ -1,0 +1,48 @@
+/*footer*/
+footer{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #6a964c;
+    display: flex;
+    justify-content: center;
+    section{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 10px;
+    }
+    .container-mapa-del-sitio h3{
+        text-align: center;
+        .div-mapa ul li{
+            list-style: none;
+            a{
+                color: black;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .container-contacto h3{
+        text-align: center;
+    }
+    .container-newsletter h3{
+        text-align: center;
+        .button2{
+            background-color: #efdc97;
+            color: #294d2b;
+            padding: 2px 2px 2px 2px;
+            font-size: 20px;
+            border-radius: 20px 20px;
+            border: 2px solid #6a964c ;
+            &:hover{
+                color: #6a964c;
+            }
+        }
+        .email-footer{
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*main-productos*/
+main h2{
+    width: $medida-principal;
+    height: 40px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+.container-productos{
+    width: $medida-principal;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 
+    'frutossecos especias sintacc diabeticos'
+    'legumbres semillas granola otros';
+    .frutos-secos{
+        grid-area: frutossecos;
+        padding: 10px;
+    }
+    .especias{
+        grid-area: especias;
+        padding: 10px;
+    }
+    .sin-tacc{
+        grid-area: sintacc;
+        padding: 10px;
+    }
+    .apto-diabeticos{
+        grid-area: diabeticos;
+        padding: 10px;
+    }
+    .legumbres{
+        grid-area: legumbres;
+        padding: 10px;
+    }
+    .semillas{
+        grid-area: semillas;
+        padding: 10px;
+    }
+    .granola{
+        grid-area: granola;
+        padding: 10px;
+    }
+    .otros{
+        grid-area: otros;
+        padding: 10px; 
+    }
+    div img{
+        width: 200px;
+    }
+}
+
+

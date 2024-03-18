@@ -1,13 +1,13 @@
 /*main-index*/
 h1{
-    width: 100%;
+    width: $medida-principal;
     height: 40px;
     margin-bottom: 5px;
     text-align: center;
     padding: 2px 2px 2px 2px;
 }
 .banner-index img{
-    width: 100%;
+    width: $medida-principal;
     background-color: #efdc97;
 }
 .productos-destacados{
