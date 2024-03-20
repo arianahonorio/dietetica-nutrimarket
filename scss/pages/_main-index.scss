@@ -1,33 +1,38 @@
 /*main-index*/
-h1{
-    width: $medida-principal;
-    height: 40px;
-    margin-bottom: 5px;
-    text-align: center;
-    padding: 2px 2px 2px 2px;
-}
-.banner-index img{
-    width: $medida-principal;
-    background-color: #efdc97;
-}
-.productos-destacados{
-    background-color: #d3a644;
-    div{
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-        img{
-            width: 150px;
-            margin-right: 5px;
-            margin-left: 5px;
-            margin-bottom: 10px;
+.main-index{
+    %estilos{
+        h1{
+            width: $medida-principal;
+            height: 40px;
+            margin-bottom: 5px;
+            text-align: center;
+            padding: 2px 2px 2px 2px;
         }
-    }
-    h2{
-        text-align: center;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        .banner-index img{
+            width: $medida-principal;
+            background-color: $color-principal;
+        }
+        .productos-destacados{
+            background-color: #d3a644;
+            h2{
+                text-align: center;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+            div{
+                @include flex (wrap, center, center);
+                //display: flex;
+                //justify-content: center;
+                justify-content: space-evenly;
+                margin-bottom: $medida-secundaria;
+                //flex-wrap: wrap;
+                img{
+                    width: 150px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    margin-bottom: $medida-secundaria;
+                }
+            }
+        }
     }
 }

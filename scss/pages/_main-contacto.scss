@@ -1,8 +1,9 @@
 /*main-contacto*/
 .contenedor-contacto{
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 
+    %estilos{
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
         'titulo titulo'
         'containerform containertexto';
         .titulo-contacto{
@@ -10,6 +11,22 @@
         }
         .container-form{
             grid-area: containerform;
+            .form-contacto{
+                .boton{
+                    .button1{
+                        background-color: #6a964c;
+                        color: white;
+                        padding: 2px 2px 2px 2px;
+                        font-size: 20px;
+                        border: 2px solid #6a964c ;
+                        border-radius: 20px 20px;
+                        &:hover{
+                            border: 2px solid $color-principal;
+                            color: $color-principal;
+                        }
+                    }
+                }
+            }
         }
         .container-text-contacto{
             grid-area: containertexto;
@@ -39,4 +56,5 @@
                 padding-top: 5px;
             }
         }
+    }
 }

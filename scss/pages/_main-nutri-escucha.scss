@@ -1,23 +1,28 @@
 /*main-nutrimarket-te-escucha*/
-.texto{
-    width: 80%;
-    text-align:left;
-    padding-left: 30px;
-    padding-top: 20px;
-}
-.container-form-escucha{
-    width: 90%;
-    padding-left: 30px ;
-    .button1{
-        background-color: #6a964c;
-        color: white;
-        padding: 2px 2px 2px 2px;
-        font-size: 20px;
-        border: 2px solid #6a964c ;
-        border-radius: 20px 20px;
-        &:hover{
-            border: 2px solid #efdc97;
-            color: #efdc97;
+.main-nutri{
+    %estilos{
+        .texto{
+            width: 80%;
+            text-align:left;
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+        .container-form-escucha{
+            width: 90%;
+            padding-left: 30px ;
+            padding-bottom: 15px;
+            .button1{
+                background-color: #6a964c;
+                color: white;
+                padding: 2px 2px 2px 2px;
+                font-size: 20px;
+                border: 2px solid #6a964c ;
+                border-radius: 20px 20px;
+                &:hover{
+                    border: 2px solid $color-principal7;
+                    color: $color-principal;
+                }
+            }
         }
     }
 }

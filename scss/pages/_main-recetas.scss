@@ -1,58 +1,62 @@
 /*main-recetas*/
-.container-barritas{
-    padding-left: 20px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    'titulobarritas titulobarritas'
-    'videobarritas ingredientesbarritas'
-    'pasoapasobarritas pasoapasobarritas';
-    .titulo-barritas{
-        grid-area: titulobarritas;
-        text-align: left;
-    }
-    .video-barritas{
-        grid-area: videobarritas;
-    }
-    .ingredientes-barritas{
-        grid-area: ingredientesbarritas;
-        display: grid;
-        justify-content: center;
-    }
-    .paso-a-paso-barritas{
-        grid-area: pasoapasobarritas;
-        padding-left: 20px;
-        width: 70%;
-        padding-top: 10px;
-    }
-}
-.container-pudines{
-    padding-left: 20px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-    'titulopudines titulopudines'
-    'videopudines ingredientespudines'
-    'pasoapasopudines pasoapasopudines';
-    .titulo-pudines{
-        text-align: left;
-        grid-area: titulopudines;
-    }
-    .video-pudines{
-        grid-area: videopudines;
-    }
-    .ingredientes-pudines{
-        grid-area: ingredientespudines;
-        display: grid;
-        justify-content: center;
-    }
-    .paso-a-paso-pudines{
-        grid-area: pasoapasopudines;
-        padding-left: 20px;
-        width: 70%;
-        padding-top: 10px;
-        padding-bottom: 20px;
+.main-recetas{
+    %estilos{
+        .container-barritas{
+            padding-left: 20px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+            'titulobarritas titulobarritas'
+            'videobarritas ingredientesbarritas'
+            'pasoapasobarritas pasoapasobarritas';
+            .titulo-barritas{
+                grid-area: titulobarritas;
+                text-align: left;
+            }
+            .video-barritas{
+                grid-area: videobarritas;
+            }
+            .ingredientes-barritas{
+                grid-area: ingredientesbarritas;
+                display: grid;
+                justify-content: center;
+            }
+            .paso-a-paso-barritas{
+                grid-area: pasoapasobarritas;
+                padding-left: 20px;
+                width: 70%;
+                padding-top: $medida-secundaria;
+            }
+        }
+        .container-pudines{
+            padding-left: 20px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+            'titulopudines titulopudines'
+            'videopudines ingredientespudines'
+            'pasoapasopudines pasoapasopudines';
+            .titulo-pudines{
+                text-align: left;
+                grid-area: titulopudines;
+            }
+            .video-pudines{
+                grid-area: videopudines;
+            }
+            .ingredientes-pudines{
+                grid-area: ingredientespudines;
+                display: grid;
+                justify-content: center;
+            }
+            .paso-a-paso-pudines{
+                grid-area: pasoapasopudines;
+                padding-left: 20px;
+                width: 70%;
+                padding-top: $medida-secundaria;
+                padding-bottom: 20px;
+            }
+        }
     }
 }

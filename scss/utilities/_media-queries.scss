@@ -4,21 +4,19 @@
     .container-nav{
         .container-fluid{
             .menu{
-                background-color: #f9f5e8;
+                background-color: $color-principal;
                 width: 100vw;
             }
         }
     }
-    
 }
 /*main-index*/
 @media screen and (max-width: 500px) {
     .main-index{
         .productos-destacados div img{
-            width: 100px;
+            width: $medida-principal;
         }
     }
-    
 }
 /*main-productos*/
 @media screen and (max-width: 430px){
@@ -74,8 +72,8 @@
                 display:none;
             }
             .container-newsletter{
-                padding-left: 10px;
-                padding-bottom: 10px;
+                padding-left: $medida-secundaria;
+                padding-bottom: $medida-secundaria;
             }
         }
     }

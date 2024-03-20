@@ -1,54 +1,57 @@
 /*Header*/
-.container-nav{
-    background-color: #f9f5e8;
+.container-nav {
+    background-color: $color-principal;
     position: sticky;
     top: 0;
     z-index: 1;
-    .navbar-expand-lg .container-fluid{
-        background-color: #f9f5e8;
-    }
-    .navbar{
-        background-color: #f9f5e8;
+    .navbar .navbar-expand-lg{
+        background-color: $color-principal;
         width: $medida-principal;
-    }
-    .logo{
-        width: 50px;
-        height: 50px; 
-    }
-    .menu-icon{
-        background-image: url(./../img/hamburger-menu.svg);
-    }
-    .menu-button{
-        border: none;
-    }
-    .menu-button:focus{
-        box-shadow: none;
-    }
-    .menu{
-        column-gap: 10px;
-        align-items: center;
-        width: $medida-principal;
-        flex-grow: 0;
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-        .navbar-nav{
-            width: $medida-principal;
-            display: flex;
-            justify-content: flex-end;
-            align-content: center;
-        }
-        .menu-ul{
-            column-gap: 10px;
-            align-items: center;
-        }
-        ul li a{
-            color: #6a964c;
-            font-size: 18px;
-            text-decoration: none;
-            &:hover{
-                color: black;
-                text-decoration: underline;
+        .container-fluid{
+            background-color: $color-principal;
+            .logo{
+                width: 50px;
+                height: 50px; 
+            }
+            .menu-button{
+                border: none;
+                &:focus{
+                    box-shadow: none;
+                }
+                .menu-icon{
+                    background-image: url(./../img/hamburger-menu.svg);
+                    color:#6a964c;
+                }
+            }
+            .menu{
+                column-gap: $medida-secundaria;
+                width: $medida-principal;
+                flex-grow: 0;
+                @include flex(nowrap, flex-end,center);
+                //display: flex;
+                //align-items: center;
+                //justify-content: flex-end;
+                align-content: center;
+                .navbar-nav{
+                    width: 100%;
+                    @include flex(nowrap, flex-end,center);
+                    //display: flex;
+                    //justify-content: flex-end;
+                    align-content: center;
+                    column-gap: 1$medida-secundaria;
+                    //align-items: center;
+                    li {
+                        a{
+                        color: #6a964c;
+                        font-size: 18px;
+                        text-decoration: none;
+                        &:hover{
+                            color: black;
+                            text-decoration: underline;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
