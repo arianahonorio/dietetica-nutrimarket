@@ -1,18 +1,460 @@
-/* Error: Undefined variable.
- *    ,
- * 22 |                     border: 2px solid $color-principal7;
- *    |                                       ^^^^^^^^^^^^^^^^^
- *    '
- *   scss\pages\_main-nutri-escucha.scss 22:39  @import
- *   scss\main.scss 13:9                        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502                      border: 2px solid $color-principal7;\d\a    \2502                                        ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\pages\\_main-nutri-escucha.scss 22:39  @import\a   scss\\main.scss 13:9                        root stylesheet";
+.contenedor-contacto, .main-nutri, .main-recetas, .main-productos, .main-index {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #efdc97;
 }
+
+/*Fuente-globals*/
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #efdc97;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header*/
+.container-nav {
+  background-color: #f9f5e8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.container-nav .navbar .navbar-expand-lg {
+  background-color: #f9f5e8;
+  width: 100%;
+}
+.container-nav .navbar .navbar-expand-lg .container-fluid {
+  background-color: #f9f5e8;
+}
+.container-nav .navbar .navbar-expand-lg .container-fluid .menu-button {
+  border: none;
+  color: #294d2b;
+}
+.container-nav .navbar .navbar-expand-lg .container-fluid .menu-button:focus {
+  box-shadow: none;
+}
+.container-nav .navbar .navbar-expand-lg .container-fluid .menu-button .menu-icon {
+  background-image: url(./../img/hamburger-menu.svg);
+  color: #6a964c;
+}
+
+.container-nav .navbar .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.container-nav .navbar .container-fluid .menu {
+  column-gap: 10px;
+  align-items: center;
+  width: 100%;
+  flex-grow: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container-nav .navbar .container-fluid .menu .navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container-nav .navbar .container-fluid .menu .menu-ul {
+  column-gap: 10px;
+  align-items: center;
+}
+.container-nav .navbar .container-fluid .menu .menu-ul li a {
+  color: #6a964c;
+  font-size: 18px;
+  text-decoration: none;
+}
+.container-nav .navbar .container-fluid .menu .menu-ul li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*main-index*/
+.main-index div h1 {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+}
+.main-index .banner-index img {
+  width: 100%;
+  background-color: #efdc97;
+}
+.main-index .productos-destacados {
+  background-color: #d3a644;
+}
+.main-index .productos-destacados h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.main-index .productos-destacados div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-index .productos-destacados div img {
+  width: 150px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/*main-productos*/
+.main-productos h2 {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+}
+.main-productos .container-productos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-areas: "frutossecos especias sintacc diabeticos" "legumbres semillas granola otros";
+}
+.main-productos .container-productos .frutos-secos {
+  grid-area: frutossecos;
+  padding: 10px;
+}
+.main-productos .container-productos .especias {
+  grid-area: especias;
+  padding: 10px;
+}
+.main-productos .container-productos .sin-tacc {
+  grid-area: sintacc;
+  padding: 10px;
+}
+.main-productos .container-productos .apto-diabeticos {
+  grid-area: diabeticos;
+  padding: 10px;
+}
+.main-productos .container-productos .legumbres {
+  grid-area: legumbres;
+  padding: 10px;
+}
+.main-productos .container-productos .semillas {
+  grid-area: semillas;
+  padding: 10px;
+}
+.main-productos .container-productos .granola {
+  grid-area: granola;
+  padding: 10px;
+}
+.main-productos .container-productos .otros {
+  grid-area: otros;
+  padding: 10px;
+}
+.main-productos .container-productos div img {
+  width: 200px;
+}
+
+/*main-recetas*/
+.main-recetas h1 {
+  text-align: center;
+}
+.main-recetas .container-barritas {
+  padding-left: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "titulobarritas titulobarritas" "videobarritas ingredientesbarritas" "pasoapasobarritas pasoapasobarritas";
+}
+.main-recetas .container-barritas .titulo-barritas {
+  grid-area: titulobarritas;
+  text-align: left;
+}
+.main-recetas .container-barritas .video-barritas {
+  grid-area: videobarritas;
+}
+.main-recetas .container-barritas .ingredientes-barritas {
+  grid-area: ingredientesbarritas;
+  display: grid;
+  justify-content: center;
+}
+.main-recetas .container-barritas .paso-a-paso-barritas {
+  grid-area: pasoapasobarritas;
+  padding-left: 20px;
+  width: 70%;
+  padding-top: 10px;
+}
+.main-recetas .container-pudines {
+  padding-left: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "titulopudines titulopudines" "videopudines ingredientespudines" "pasoapasopudines pasoapasopudines";
+}
+.main-recetas .container-pudines .titulo-pudines {
+  text-align: left;
+  grid-area: titulopudines;
+}
+.main-recetas .container-pudines .video-pudines {
+  grid-area: videopudines;
+}
+.main-recetas .container-pudines .ingredientes-pudines {
+  grid-area: ingredientespudines;
+  display: grid;
+  justify-content: center;
+}
+.main-recetas .container-pudines .paso-a-paso-pudines {
+  grid-area: pasoapasopudines;
+  padding-left: 20px;
+  width: 70%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*main-nutrimarket-te-escucha*/
+.main-nutri h1 {
+  text-align: center;
+}
+.main-nutri .texto {
+  width: 80%;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.main-nutri .container-form-escucha {
+  width: 90%;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+.main-nutri .container-form-escucha .button1 {
+  background-color: #6a964c;
+  color: white;
+  padding: 2px 2px 2px 2px;
+  font-size: 20px;
+  border: 4px solid #6a964c;
+  border-radius: 20px 20px;
+}
+.main-nutri .container-form-escucha .button1:hover {
+  border: 4px solid #efdc97;
+  color: #efdc97;
+}
+
+/*main-contacto*/
+.contenedor-contacto {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "titulo titulo" "sectioncontacto sectioncontacto";
+}
+.contenedor-contacto .titulo-contacto {
+  text-align: center;
+  grid-area: titulo;
+}
+.contenedor-contacto .section-contacto {
+  grid-area: sectioncontacto;
+  display: grid;
+  grid-template-areas: "containerform containertexto";
+  padding-top: 50px;
+}
+.contenedor-contacto .section-contacto .container-form {
+  grid-area: containerform;
+}
+.contenedor-contacto .section-contacto .container-form .form-contacto .boton .button1 {
+  background-color: #6a964c;
+  color: white;
+  padding: 2px 2px 2px 2px;
+  font-size: 20px;
+  border: 4px solid #6a964c;
+  border-radius: 20px 20px;
+}
+.contenedor-contacto .section-contacto .container-form .form-contacto .boton .button1:hover {
+  border: 4px solid #efdc97;
+  color: #efdc97;
+}
+.contenedor-contacto .section-contacto .container-text-contacto {
+  grid-area: containertexto;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 50px;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .atencion-telefonica {
+  padding-bottom: 15px;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .atencion-telefonica h3 {
+  text-decoration: underline;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .mail-contacto {
+  padding-bottom: 15px;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .mail-contacto h3 {
+  text-decoration: underline;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .mail-nutri-escucha {
+  padding-bottom: 15px;
+}
+.contenedor-contacto .section-contacto .container-text-contacto .mail-nutri-escucha h3 {
+  text-decoration: underline;
+}
+
+/*footer*/
+footer {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #6a964c;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 10px;
+}
+footer section .div-mapa h3 {
+  text-align: center;
+}
+footer section .div-mapa ul li {
+  list-style: none;
+}
+footer section .div-mapa ul li a {
+  color: black;
+  text-decoration: none;
+}
+footer section .div-mapa ul li a:hover {
+  text-decoration: underline;
+  color: #f9f5e8;
+}
+footer section .container-contacto h3 {
+  text-align: center;
+}
+footer section .container-newsletter h3 {
+  text-align: center;
+}
+footer section .container-newsletter .newsletter-form form .email-footer {
+  width: 150px;
+}
+footer section .container-newsletter .newsletter-form form .button2 {
+  background-color: #efdc97;
+  padding: 2px 2px 2px 2px;
+  font-size: 20px;
+  border-radius: 20px 20px;
+  border: 4px solid #6a964c;
+}
+footer section .container-newsletter .newsletter-form form .button2:hover {
+  color: #6a964c;
+  border: 4px solid #efdc97;
+}
+
+/*Media Queries*/
+/*Header*/
+@media screen and (max-width: 991px) {
+  .container-nav .container-fluid .menu {
+    background-color: #f9f5e8;
+    width: 100%;
+  }
+}
+/*main-index*/
+@media screen and (max-width: 500px) {
+  .main-index .productos-destacados div img {
+    width: 120px;
+  }
+}
+/*main-productos*/
+@media screen and (max-width: 430px) {
+  .main-productos .container-productos {
+    display: flex;
+  }
+  .main-productos .container-productos div img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-productos container-productos {
+    display: flex;
+  }
+}
+/*main-recetas*/
+@media screen and (max-width: 500px) {
+  .main-recetas .container-barritas {
+    display: flex;
+  }
+  .main-recetas .container-barritas .video-barritas iframe {
+    width: auto;
+  }
+  .main-recetas .container-pudines {
+    display: flex;
+  }
+  .main-recetas .container-pudines .video-pudines iframe {
+    width: auto;
+  }
+}
+/*main-recetas*/
+@media screen and (max-width: 480px) {
+  .main-recetas .container-barritas {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-recetas .container-barritas .video-barritas iframe {
+    width: auto;
+  }
+  .main-recetas .container-barritas .paso-a-paso-barritas {
+    width: 90%;
+  }
+  .main-recetas .container-barritas .paso-a-paso-barritas div ol {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-recetas .container-pudines {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-recetas .container-pudines .video-pudines iframe {
+    width: auto;
+  }
+  .main-recetas .container-pudines .paso-a-paso-pudines {
+    width: 90%;
+  }
+  .main-recetas .container-pudines .paso-a-paso-pudines div ol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*main-contacto*/
+@media screen and (max-width: 480px) {
+  .container-contacto .section-contacto {
+    display: flex;
+  }
+  .container-contacto .section-contacto .container-text-contacto {
+    font-size: small;
+  }
+}
+/*footer*/
+@media screen and (max-width: 500px) {
+  footer section .div-mapa {
+    display: none;
+  }
+  footer section .container-newsletter {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

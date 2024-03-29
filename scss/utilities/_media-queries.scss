@@ -4,17 +4,22 @@
     .container-nav{
         .container-fluid{
             .menu{
-                background-color: $color-principal;
-                width: 100vw;
+                background-color: $color-terciario;
+                width: $medida-principal;
             }
         }
     }
 }
+
 /*main-index*/
 @media screen and (max-width: 500px) {
     .main-index{
-        .productos-destacados div img{
-            width: $medida-principal;
+        .productos-destacados{
+            div{
+                img{
+                    width: 120px;
+                }
+            }
         }
     }
 }
@@ -23,8 +28,10 @@
     .main-productos{
         .container-productos{
             display: flex;
-            div img{
-                width: 150px;
+            div{
+                img{
+                    width: 150px;
+                }
             }
         }
     }
@@ -53,6 +60,47 @@
         }
     }
 }
+/*main-recetas*/
+@media screen and (max-width:480px) {
+    .main-recetas{
+        .container-barritas{
+            display: flex;
+            flex-direction: column;
+            .video-barritas{
+                iframe{
+                    width: auto ;
+                }
+            }
+            .paso-a-paso-barritas{
+                width: 90%;
+                div{
+                    ol{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        .container-pudines{
+            display: flex;
+            flex-direction: column;
+            .video-pudines{
+                iframe{
+                    width: auto;
+                }
+            }
+            .paso-a-paso-pudines{
+                width: 90%;
+                div{
+                    ol{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
 /*main-contacto*/
 @media screen and (max-width: 480px){
     .container-contacto{
@@ -68,7 +116,7 @@
 @media screen and (max-width:500px){
     footer{
         section{
-            .container-mapa-del-sitio{
+            .div-mapa{
                 display:none;
             }
             .container-newsletter{

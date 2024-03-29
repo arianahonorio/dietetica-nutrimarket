@@ -101,14 +101,8 @@
         width: 100px;
     }
 }
-/*.productos-destacados{
+.productos-destacados{
     background-color: #d3a644;
-}
-.productos-destacados div img{
-    width: 150px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 10px;
 }
 .productos-destacados h2{
     text-align: center;
@@ -121,7 +115,14 @@
     justify-content: space-evenly;
     margin-bottom: 10px;
     flex-wrap: wrap;
-}*/
+}
+.productos-destacados div img{
+    width: 150px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
 
 /*main-productos*/
 
@@ -291,10 +292,10 @@ main section{
 .button1:hover{
     border: 2px solid #efdc97;
     color: #efdc97;
-}*/
+}
 
 /*main-contacto*/
-/*contenedor-contacto{
+/* contenedor-contacto{
     display: grid;
     justify-content: center;
     grid-template-areas: 
@@ -344,8 +345,8 @@ main section{
     }
 }
 /*footer*/
-
-/*footer{
+/*
+footer{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -359,13 +360,8 @@ footer section{
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 10px;
 }
-.container-mapa-del-sitio h3{
-    text-align: center;
-}
-.container-contacto h3{
-    text-align: center;
-}
-.container-newsletter h3{
+
+h3{
     text-align: center;
 }
 .div-mapa ul li{
@@ -377,7 +373,20 @@ footer section{
 }
 .div-mapa ul li a:hover{
     text-decoration: underline;
+
 }
+.container-contacto h3{
+    text-align: center;
+}
+.container-newsletter h3{
+    text-align: center;}
+
+
+
+.email-footer{
+    width: 150px;
+}
+
 .button2{
     background-color: #efdc97;
     color: #294d2b;
@@ -386,12 +395,7 @@ footer section{
     border-radius: 20px 20px;
     border: 2px solid #6a964c ;
 }
-.button2:hover{
-    color: #6a964c;
-}
-.email-footer{
-    width: 150px;
-}
+/*
 @media screen and (max-width:500px){
     .container-mapa-del-sitio{
         display:none;
@@ -400,4 +404,4 @@ footer section{
         padding-left: 10px;
         padding-bottom: 10px;
     }
-}
+}*/

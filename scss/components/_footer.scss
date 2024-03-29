@@ -3,7 +3,7 @@ footer{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background-color: #6a964c;
+    background-color: $color-secundario;
     @include flex(nowrap,center,center);
     //display: flex;
     //justify-content: center;
@@ -12,9 +12,11 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding-top: $medida-secundaria;
-        .container-mapa-del-sitio h3{
-            text-align: center;
-            .div-mapa ul {
+        .div-mapa{
+            h3{
+                text-align: center;
+            }
+            ul{
                 li{
                     list-style: none;
                     a{
@@ -22,31 +24,38 @@ footer{
                         text-decoration: none;
                         &:hover{
                             text-decoration: underline;
+                            color: $color-terciario;
                         }
                     }
                 }
             }
         }
-    }
-    .container-contacto h3{
-        text-align: center;
-    }
-    .container-newsletter h3{
-        text-align: center;
-        .newsletter-form{
-            .button2{
-                background-color: $color-principal;
-                color: #294d2b;
-                padding: 2px 2px 2px 2px;
-                font-size: 20px;
-                border-radius: 20px 20px;
-                border: 2px solid #6a964c ;
-                &:hover{
-                    color: #6a964c;
-                }
+        .container-contacto{
+            h3{
+                text-align: center;
             }
-            .email-footer{
-                width: 150px;
+        }
+        .container-newsletter{
+            h3{
+                text-align: center;
+            }
+            .newsletter-form{
+                form{
+                    .email-footer{
+                        width: 150px;
+                    }
+                    .button2{
+                        background-color: $color-principal;
+                        padding: 2px 2px 2px 2px;
+                        font-size: 20px;
+                        border-radius: 20px 20px;
+                        border: 4px solid $color-secundario ;
+                        &:hover{
+                            color:$color-secundario;
+                            border: 4px solid $color-principal ;
+                        }
+                    }
+                }      
             }
         }
     }

@@ -1,53 +1,70 @@
 /*Header*/
 .container-nav {
-    background-color: $color-principal;
+    background-color: $color-terciario;
     position: sticky;
     top: 0;
     z-index: 1;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     .navbar .navbar-expand-lg{
-        background-color: $color-principal;
+        background-color: $color-terciario;
         width: $medida-principal;
         .container-fluid{
-            background-color: $color-principal;
-            .logo{
-                width: 50px;
-                height: 50px; 
-            }
+            background-color: $color-terciario;
             .menu-button{
                 border: none;
+                color: #294d2b;
                 &:focus{
                     box-shadow: none;
                 }
                 .menu-icon{
                     background-image: url(./../img/hamburger-menu.svg);
-                    color:#6a964c;
+                    color:$color-secundario;
                 }
             }
+            
+        }
+    }
+}
+.container-nav{
+    .navbar{
+        .logo{
+            width: 50px;
+            height: 50px; 
+        }
+    }
+}
+.container-nav{
+    .navbar{
+        .container-fluid{
             .menu{
                 column-gap: $medida-secundaria;
+                align-items: center;
                 width: $medida-principal;
                 flex-grow: 0;
-                @include flex(nowrap, flex-end,center);
+                @include flex (nowrap, flex-end, center);
                 //display: flex;
-                //align-items: center;
                 //justify-content: flex-end;
-                align-content: center;
+                //align-content: center;
                 .navbar-nav{
-                    width: 100%;
-                    @include flex(nowrap, flex-end,center);
+                    width: $medida-principal;
+                    @include flex (nowrap, flex-end, center);
                     //display: flex;
                     //justify-content: flex-end;
-                    align-content: center;
-                    column-gap: 1$medida-secundaria;
-                    //align-items: center;
-                    li {
+                    //align-content: center;
+                }
+                .menu-ul{
+                    column-gap: 10px;
+                    align-items: center;
+                    li{
                         a{
-                        color: #6a964c;
-                        font-size: 18px;
-                        text-decoration: none;
-                        &:hover{
-                            color: black;
-                            text-decoration: underline;
+                            color: #6a964c;
+                            font-size: 18px;
+                            text-decoration: none;
+                            &:hover{
+                                color: black;
+                                text-decoration: underline;
                             }
                         }
                     }

@@ -1,6 +1,6 @@
 /*main-productos*/
 .main-productos{
-    %estilos{
+    @extend %estilos;
         h2{
             width: $medida-principal;
             height: 40px;
@@ -50,10 +50,12 @@
                 grid-area: otros;
                 padding: $medida-secundaria; 
             }
-            div img{
+            div {
+                img{
                 width: 200px;
             }
         }
     }
-} 
+}
+
 

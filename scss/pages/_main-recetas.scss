@@ -1,6 +1,9 @@
 /*main-recetas*/
 .main-recetas{
-    %estilos{
+    @extend %estilos;
+    h1{
+        text-align: center;
+    }
         .container-barritas{
             padding-left: 20px;
             display: grid;
@@ -59,4 +62,4 @@
             }
         }
     }
-}
+
