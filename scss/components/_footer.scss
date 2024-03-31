@@ -17,6 +17,7 @@ footer{
                 text-align: center;
             }
             ul{
+                text-align: center;
                 li{
                     list-style: none;
                     a{
@@ -34,6 +35,10 @@ footer{
             h3{
                 text-align: center;
             }
+            p{
+                text-decoration: underline;
+                text-align: center;
+            }
         }
         .container-newsletter{
             h3{
@@ -42,13 +47,16 @@ footer{
             .newsletter-form{
                 form{
                     .email-footer{
+                        border: 3px solid $color-secundario;
+                        border-radius: 5px 5px;
+                        height: 35px;
                         width: 150px;
                     }
                     .button2{
                         background-color: $color-principal;
                         padding: 2px 2px 2px 2px;
                         font-size: 20px;
-                        border-radius: 20px 20px;
+                        border-radius: 10px 10px;
                         border: 4px solid $color-secundario ;
                         &:hover{
                             color:$color-secundario;

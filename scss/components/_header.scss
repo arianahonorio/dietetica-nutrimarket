@@ -21,9 +21,9 @@
                 .menu-icon{
                     background-image: url(./../img/hamburger-menu.svg);
                     color:$color-secundario;
+                    border-color: #294d2b;
                 }
             }
-            
         }
     }
 }
@@ -58,15 +58,17 @@
                     column-gap: 10px;
                     align-items: center;
                     li{
-                        a{
-                            color: #6a964c;
-                            font-size: 18px;
-                            text-decoration: none;
-                            &:hover{
-                                color: black;
-                                text-decoration: underline;
+                        button{
+                            a{
+                                color: #6a964c;
+                                font-size: 18px;
+                                text-decoration: none;
+                                &:hover{
+                                    color: #f9f5e8;
+                                }
                             }
                         }
+                        
                     }
                 }
             }
